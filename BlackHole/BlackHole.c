@@ -150,15 +150,15 @@ struct ObjectInfo {
 
 
 #ifndef kDriver_Name
-#define                             kDriver_Name                        "BlackHole"
+#define                             kDriver_Name                        "Audio4Stratos"
 #endif
 
 #ifndef kPlugIn_BundleID
-#define                             kPlugIn_BundleID                    "audio.existential.BlackHole2ch"
+#define                             kPlugIn_BundleID                    "audio.TAP.Audio4Stratos16ch"
 #endif
 
 #ifndef kPlugIn_Icon
-#define                             kPlugIn_Icon                        "BlackHole.icns"
+#define                             kPlugIn_Icon                        "app.icns"
 #endif
 
 #ifndef kHas_Driver_Name_Format
@@ -234,7 +234,7 @@ struct ObjectInfo {
 #define                             kLatency_Frame_Size                 0
 
 #ifndef kNumber_Of_Channels
-#define                             kNumber_Of_Channels                 2
+#define                             kNumber_Of_Channels                 16
 #endif
 
 #ifndef kEnableVolumeControl
@@ -263,7 +263,7 @@ static Boolean                      gBox_Acquired                       = kBox_A
 
 
 static pthread_mutex_t              gDevice_IOMutex                     = PTHREAD_MUTEX_INITIALIZER;
-static Float64                      gDevice_SampleRate                  = 48000.0;
+static Float64                      gDevice_SampleRate                  = 96000.0;
 static Float64                      gDevice_RequestedSampleRate         = 0.0;
 static UInt64                       gDevice_IOIsRunning                 = 0;
 static UInt64                       gDevice2_IOIsRunning                = 0;
@@ -278,7 +278,7 @@ static UInt64                       gDevice_AnchorHostTime              = 0;
 static bool                         gStream_Input_IsActive              = true;
 static bool                         gStream_Output_IsActive             = true;
 
-static const Float32                kVolume_MinDB                       = -64.0;
+static const Float32                kVolume_MinDB                       = -99.0;
 static const Float32                kVolume_MaxDB                       = 0.0;
 static Float32                      gVolume_Master_Value                = 1.0;
 static Float32                      gPitch_Adjust                       = 0.5;
@@ -321,7 +321,7 @@ static const UInt32                 kDevice_ObjectListSize              = sizeof
 static const UInt32                 kDevice2_ObjectListSize              = sizeof(kDevice2_ObjectList) / sizeof(struct ObjectInfo);
 
 #ifndef kSampleRates
-#define                             kSampleRates       8000, 16000, 24000, 44100, 48000, 88200, 96000, 176400, 192000, 352800, 384000, 705600, 768000
+#define                             kSampleRates       32000, 44100, 48000, 88200, 96000, 176400, 192000
 #endif
 
 static Float64                      kDevice_SampleRates[]               = { kSampleRates };
