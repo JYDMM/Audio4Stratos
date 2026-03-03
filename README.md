@@ -14,13 +14,6 @@ BlackHole is a modern macOS virtual audio loopback driver that allows applicatio
 
 ### [Join the Discord Server](https://discord.gg/y8BWfnWRnn)
 
-## Sponsors
-
-### Recall.ai - API for desktop recording
-
-If you’re looking for a desktop recording API, consider checking out [Recall.ai](https://www.recall.ai/product/desktop-recording-sdk?utm_source=github&utm_medium=sponsorship&utm_campaign=existentialaudio-blackhole), an API that records video, audio, and transcripts from Zoom, Google Meet, Microsoft Teams, in-person meetings, and more.
-
-To sponsor this project visit https://github.com/sponsors/ExistentialAudio
 
 ## Table of Contents
 
@@ -35,10 +28,10 @@ To sponsor this project visit https://github.com/sponsors/ExistentialAudio
 
 ## Features
 
-- Builds 2, 16, 64, 128, and 256 audio channels versions
+- Builds ~~2, ~~16~~, 64, 128, and 256~~ audio channels versions
 - Customizable channel count, latency, hidden devices
 - Customizable mirror device to allow for a hidden input or output
-- Supports 8kHz, 16kHz, 44.1kHz, 48kHz, 88.2kHz, 96kHz, 176.4kHz, 192kHz, 352.8kHz, 384kHz, 705.6kHz and 768kHz sample rates
+- Supports ~~8kHz, 16kHz,~~ 32k, 44.1kHz, 48kHz, 88.2kHz, 96kHz, 176.4kHz, and 192kHz~~, 352.8kHz, 384kHz, 705.6kHz and 768kHz~~ sample rates
 - Zero additional driver latency
 - Compatible with macOS 10.10 Yosemite and newer
 - Builds for Intel and Apple Silicon
@@ -47,6 +40,8 @@ To sponsor this project visit https://github.com/sponsors/ExistentialAudio
 ![Audio MIDI Setup](Images/audio-midi-setup.png)
 
 ## Installation Instructions
+
+This is a work in progress on this fork. However, you can currenly install the original BlackHole Driver from Existential Audio from the methods below:
 
 ### Option 1: Download Installer
 
@@ -85,44 +80,6 @@ To sponsor this project visit https://github.com/sponsors/ExistentialAudio
 
 For more specific details [visit the Wiki](https://github.com/ExistentialAudio/BlackHole/wiki/Uninstallation).
 
-## User Guides
-
-### Logic Pro X
-
-- [Logic Pro X to FaceTime](https://existential.audio/howto/StreamFromLogicProXtoFaceTime.php)
-- [Logic Pro X to Google Meet](https://existential.audio/howto/StreamFromLogicProXtoGoogleMeet.php)
-- [Logic Pro X to Skype](https://existential.audio/howto/StreamFromLogicProXtoSkype.php)
-- [Logic Pro X to Zoom](https://existential.audio/howto/StreamFromLogicProXtoZoom.php)
-
-### GarageBand
-
-- [GarageBand to FaceTime](https://existential.audio/howto/StreamFromGarageBandToFaceTime.php)
-- [GarageBand to Google Meet](https://existential.audio/howto/StreamFromGarageBandToGoogleMeet.php)
-- [GarageBand to Skype](https://existential.audio/howto/StreamFromGarageBandToSkype.php)
-- [GarageBand to Zoom](https://existential.audio/howto/StreamFromGarageBandToZoom.php)
-
-### Audacity
-
-- [Audacity Setup](https://github.com/ExistentialAudio/BlackHole/wiki/Audacity)
-
-### Reaper
-
-- [Reaper to Zoom](https://noahliebman.net/2020/12/telephone-colophon-or-how-i-overengineered-my-call-audio/) by Noah Liebman
-
-### Record System Audio
-
-1. [Setup Multi-Output Device](https://github.com/ExistentialAudio/BlackHole/wiki/Multi-Output-Device)
-2. In `Audio MIDI Setup` → `Audio Devices` right-click on the newly created Multi-Output and select "Use This Device For Sound Output"
-3. Open digital audio workstation (DAW) such as GarageBand and set input device to "BlackHole" 
-4. Set track to input from channel 1-2
-5. Play audio from another application and monitor or record in your DAW
-
-### Route Audio Between Applications
-
-1. Set output driver to "BlackHole" in sending application
-2. Output audio to any channel
-3. Open receiving application and set input device to "BlackHole" 
-4. Input audio from the corresponding output channels
 
 ## Developer Guides
 
