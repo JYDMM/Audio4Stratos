@@ -150,15 +150,15 @@ struct ObjectInfo {
 
 
 #ifndef kDriver_Name
-#define                             kDriver_Name                        "Audio4Stratos"
+#define                             kDriver_Name                        "BacchWire"
 #endif
 
 #ifndef kPlugIn_BundleID
-#define                             kPlugIn_BundleID                    "audio.TAP.Audio4Stratos16ch"
+#define                             kPlugIn_BundleID                    "audio.TAP.BacchWire16ch"
 #endif
 
 #ifndef kPlugIn_Icon
-#define                             kPlugIn_Icon                        "app.icns"
+#define                             kPlugIn_Icon                        "App.icns"
 #endif
 
 #ifndef kHas_Driver_Name_Format
@@ -228,7 +228,7 @@ struct ObjectInfo {
 
 
 #ifndef kManufacturer_Name
-#define                             kManufacturer_Name                  "Existential Audio Inc."
+#define                             kManufacturer_Name                  "Theoretica Applied Physics LLC."
 #endif
 
 #define                             kLatency_Frame_Size                 0

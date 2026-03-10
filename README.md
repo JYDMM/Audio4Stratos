@@ -1,6 +1,6 @@
 ![BlackHole: Audio Loopback Driver](Images/blackhole-banner-830px.png)
 
-# BlackHole: Audio Loopback Driver
+# BacchWire: Audio Loopback Driver
 
 ![Platform: macOS](https://img.shields.io/badge/platform-macOS-lightgrey)
 [![Release](https://img.shields.io/github/v/release/ExistentialAudio/BlackHole)](https://github.com/ExistentialAudio/BlackHole/releases)
